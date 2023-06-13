@@ -1,11 +1,11 @@
 from ting_file_management.file_management import txt_importer
 
+processed = set()
+
 
 def process(path_file, instance):
-    processed = set()
-
     if path_file in processed:
-        return
+        return None
 
     txt = txt_importer(path_file)
     dict = {

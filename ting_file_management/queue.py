@@ -22,6 +22,9 @@ class Queue(AbstractQueue):
         else:
             raise IndexError("Índice Inválido ou Inexistente")
 
+    def is_empty(self):
+        return self._data == []
+
 # funções baseadas no repositório da aula 3.4 e
 # no material do course do dia 3.4
 # referência para buscas :
