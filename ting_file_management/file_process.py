@@ -4,8 +4,9 @@ processed = set()
 
 
 def process(path_file, instance):
-    if path_file in processed:
-        return None
+    for item in instance._data:
+        if item["nome_do_arquivo"] == path_file:
+            return
 
     txt = txt_importer(path_file)
     dict = {
@@ -23,7 +24,7 @@ def process(path_file, instance):
 
 
 def remove(instance):
-    if instance.is_empty():
+    if len(instance) == 0:
         print("Não há elementos")
         return
 
