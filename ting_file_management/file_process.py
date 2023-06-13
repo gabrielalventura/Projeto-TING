@@ -26,6 +26,10 @@ def remove(instance):
     if instance.is_empty():
         return "Não há elementos"
 
+    infoToRemove = instance.dequeue()
+    path_file = infoToRemove['nome_do_arquivo']
+    print(f'Arquivo {path_file} removido com sucesso')
+
 
 def file_metadata(instance, position):
     """Aqui irá sua implementação"""
