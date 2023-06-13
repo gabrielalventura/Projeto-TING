@@ -7,7 +7,7 @@ def process(path_file, instance):
     for item in instance._data:
         if item["nome_do_arquivo"] == path_file:
             return
-    # solução desenvolvida com auxilio do Carlos Melo em mentoria. 
+    # solução desenvolvida com auxilio do Carlos Melo em mentoria.
 
     txt = txt_importer(path_file)
     dict = {
@@ -25,7 +25,7 @@ def process(path_file, instance):
 
 
 def remove(instance):
-    if len(instance) == 0:
+    if instance.is_empty():
         print("Não há elementos")
         return
 
