@@ -23,7 +23,8 @@ def process(path_file, instance):
 
 
 def remove(instance):
-    """Aqui irá sua implementação"""
+    if instance.is_empty():
+        return "Não há elementos"
 
 
 def file_metadata(instance, position):
