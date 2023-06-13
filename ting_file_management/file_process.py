@@ -24,11 +24,12 @@ def process(path_file, instance):
 
 def remove(instance):
     if instance.is_empty():
-        return "Não há elementos"
+        print("Não há elementos")
+        return
 
-    infoToRemove = instance.dequeue()
-    path_file = infoToRemove['nome_do_arquivo']
-    print(f'Arquivo {path_file} removido com sucesso')
+    info_to_remove = instance.dequeue()
+    path_file = info_to_remove["nome_do_arquivo"]
+    print(f"Arquivo {path_file} removido com sucesso")
 
 
 def file_metadata(instance, position):
