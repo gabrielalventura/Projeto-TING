@@ -7,6 +7,7 @@ def process(path_file, instance):
     for item in instance._data:
         if item["nome_do_arquivo"] == path_file:
             return
+    # solução desenvolvida com auxilio do Carlos Melo em mentoria. 
 
     txt = txt_importer(path_file)
     dict = {
