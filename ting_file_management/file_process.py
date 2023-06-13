@@ -28,7 +28,9 @@ def remove(instance):
         return
 
     info_to_remove = instance.dequeue()
+
     path_file = info_to_remove["nome_do_arquivo"]
+
     print(f"Arquivo {path_file} removido com sucesso")
 
 
