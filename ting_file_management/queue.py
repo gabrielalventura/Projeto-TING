@@ -17,7 +17,11 @@ class Queue(AbstractQueue):
         return self._data.pop(0)
 
     def search(self, index):
-        """Aqui irá sua implementação"""
+        if index == 0 or index < len(self._data):
+            return self._data[index]
+        return "Índice Inválido ou Inexistente"
 
 # funções baseadas no repositório da aula 3.4 e
 # no material do course do dia 3.4
+# referência para buscas :
+# https://www.otaviomiranda.com.br/2020/filas-em-python-com-deque-queue/
