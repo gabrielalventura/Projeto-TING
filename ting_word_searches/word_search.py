@@ -12,7 +12,7 @@ def exists_word(word, instance):
         for i, line in enumerate(info["linhas_do_arquivo"], start=1):
             line_lower = line.lower()
             if word_lower in line_lower:
-                return word_info["ocorrencias"].append({"linha": i})
+                word_info["ocorrencias"].append({"linha": i})
         if word_info["ocorrencias"]:
             existents.append(word_info)
     return existents
