@@ -23,5 +23,6 @@ def exists_word(word, instance):
 # https://datascience.eu/pt/programacao/enumerar-em-python-o-que-voce-precisa-saber/
 # https://www.w3schools.com/python/ref_func_enumerate.asp
 
+
 def search_by_word(word, instance):
     """Aqui irá sua implementação"""
